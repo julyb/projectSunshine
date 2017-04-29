@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0AF7C9951EB4F186001ED186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9941EB4F186001ED186 /* AppDelegate.swift */; };
-		0AF7C9971EB4F186001ED186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9961EB4F186001ED186 /* ViewController.swift */; };
+		0AF7C9971EB4F186001ED186 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9961EB4F186001ED186 /* MapViewController.swift */; };
 		0AF7C99A1EB4F186001ED186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7C9981EB4F186001ED186 /* Main.storyboard */; };
 		0AF7C99C1EB4F186001ED186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7C99B1EB4F186001ED186 /* Assets.xcassets */; };
 		0AF7C99F1EB4F186001ED186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7C99D1EB4F186001ED186 /* LaunchScreen.storyboard */; };
 		0AF7C9AA1EB4F186001ED186 /* projectSunshineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9A91EB4F186001ED186 /* projectSunshineTests.swift */; };
 		0AF7C9B51EB4F186001ED186 /* projectSunshineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9B41EB4F186001ED186 /* projectSunshineUITests.swift */; };
+		0AF7C9C71EB519FE001ED186 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7C9C61EB519FE001ED186 /* style.json */; };
+		11EAB55301D50F6D6C76F845 /* libPods-projectSunshine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEF04F7863942401C67696 /* libPods-projectSunshine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		0AF7C9911EB4F186001ED186 /* projectSunshine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectSunshine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF7C9941EB4F186001ED186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AF7C9961EB4F186001ED186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AF7C9961EB4F186001ED186 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0AF7C9991EB4F186001ED186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AF7C99B1EB4F186001ED186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF7C99E1EB4F186001ED186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		0AF7C9B01EB4F186001ED186 /* projectSunshineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectSunshineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF7C9B41EB4F186001ED186 /* projectSunshineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectSunshineUITests.swift; sourceTree = "<group>"; };
 		0AF7C9B61EB4F186001ED186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF7C9C61EB519FE001ED186 /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
+		61CCBB9677C1834958FD23C9 /* Pods-projectSunshine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectSunshine.release.xcconfig"; path = "Pods/Target Support Files/Pods-projectSunshine/Pods-projectSunshine.release.xcconfig"; sourceTree = "<group>"; };
+		65EEF04F7863942401C67696 /* libPods-projectSunshine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-projectSunshine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34F49BA85EF06AD0CF12260 /* Pods-projectSunshine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectSunshine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projectSunshine/Pods-projectSunshine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EAB55301D50F6D6C76F845 /* libPods-projectSunshine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,8 @@
 				0AF7C9A81EB4F186001ED186 /* projectSunshineTests */,
 				0AF7C9B31EB4F186001ED186 /* projectSunshineUITests */,
 				0AF7C9921EB4F186001ED186 /* Products */,
+				597AC59CF4014E9DE8CA15C3 /* Pods */,
+				A720367767274767272738CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				0AF7C9941EB4F186001ED186 /* AppDelegate.swift */,
-				0AF7C9961EB4F186001ED186 /* ViewController.swift */,
+				0AF7C9961EB4F186001ED186 /* MapViewController.swift */,
 				0AF7C9981EB4F186001ED186 /* Main.storyboard */,
 				0AF7C99B1EB4F186001ED186 /* Assets.xcassets */,
 				0AF7C99D1EB4F186001ED186 /* LaunchScreen.storyboard */,
 				0AF7C9A01EB4F186001ED186 /* Info.plist */,
+				0AF7C9C61EB519FE001ED186 /* style.json */,
 			);
 			path = projectSunshine;
 			sourceTree = "<group>";
@@ -125,6 +135,23 @@
 			path = projectSunshineUITests;
 			sourceTree = "<group>";
 		};
+		597AC59CF4014E9DE8CA15C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D34F49BA85EF06AD0CF12260 /* Pods-projectSunshine.debug.xcconfig */,
+				61CCBB9677C1834958FD23C9 /* Pods-projectSunshine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A720367767274767272738CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65EEF04F7863942401C67696 /* libPods-projectSunshine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AF7C9B91EB4F186001ED186 /* Build configuration list for PBXNativeTarget "projectSunshine" */;
 			buildPhases = (
+				DDEB3AEB77378414B9D77342 /* [CP] Check Pods Manifest.lock */,
 				0AF7C98D1EB4F186001ED186 /* Sources */,
 				0AF7C98E1EB4F186001ED186 /* Frameworks */,
 				0AF7C98F1EB4F186001ED186 /* Resources */,
+				916501769E65280C4F446877 /* [CP] Embed Pods Frameworks */,
+				90B583C3E5FCD1EE36DC8BFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +266,7 @@
 				0AF7C99F1EB4F186001ED186 /* LaunchScreen.storyboard in Resources */,
 				0AF7C99C1EB4F186001ED186 /* Assets.xcassets in Resources */,
 				0AF7C99A1EB4F186001ED186 /* Main.storyboard in Resources */,
+				0AF7C9C71EB519FE001ED186 /* style.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,12 +286,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		90B583C3E5FCD1EE36DC8BFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-projectSunshine/Pods-projectSunshine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		916501769E65280C4F446877 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-projectSunshine/Pods-projectSunshine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDEB3AEB77378414B9D77342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0AF7C98D1EB4F186001ED186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF7C9971EB4F186001ED186 /* ViewController.swift in Sources */,
+				0AF7C9971EB4F186001ED186 /* MapViewController.swift in Sources */,
 				0AF7C9951EB4F186001ED186 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +492,7 @@
 		};
 		0AF7C9BA1EB4F186001ED186 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D34F49BA85EF06AD0CF12260 /* Pods-projectSunshine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4QH4G6597M;
@@ -426,6 +506,7 @@
 		};
 		0AF7C9BB1EB4F186001ED186 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CCBB9677C1834958FD23C9 /* Pods-projectSunshine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4QH4G6597M;
@@ -510,6 +591,7 @@
 				0AF7C9BB1EB4F186001ED186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AF7C9BC1EB4F186001ED186 /* Build configuration list for PBXNativeTarget "projectSunshineTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +600,7 @@
 				0AF7C9BE1EB4F186001ED186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AF7C9BF1EB4F186001ED186 /* Build configuration list for PBXNativeTarget "projectSunshineUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +609,7 @@
 				0AF7C9C11EB4F186001ED186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
