@@ -30,28 +30,28 @@ class MapViewController: UIViewController {
     let businesses = [
         Business(name: "Starbucks", lat: 50.520099, long: -0.0705446, type: .Green),
         Business(name: "Apple", lat: 51.510099, long: -0.0605446, type: .Green),
-        Business(name: "Wallmart", lat: 51.490099, long: -0.0505446, type: .Green),
+        Business(name: "Wallmart", lat: 51.490099, long: -0.0505446, type: .Red),
         Business(name: "Whole Foods", lat: 51.490099, long: -0.0605446, type: .Green),
-        Business(name: "Planet Organic", lat: 51.530099, long: -0.0705446, type: .Green),
+        Business(name: "Planet Organic", lat: 51.530099, long: -0.0705446, type: .Red),
         Business(name: "Pret a manger", lat: 51.540099, long: -0.0905446, type: .Green),
-        Business(name: "Costa", lat: 51.5140099, long: -0.1005446, type: .Green),
+        Business(name: "Costa", lat: 51.5140099, long: -0.1005446, type: .Red),
         Business(name: "Eat", lat: 51.510099, long: -0.0455446, type: .Green),
         Business(name: "Pizza Hut", lat: 51.500099, long: -0.0655446, type: .Green),
         Business(name: "Wahaca", lat: 51.520099, long: -0.0715446, type: .Green),
-        Business(name: "Honest Burgers", lat: 51.530099, long: -0.0915446, type: .Green),
-        Business(name: "Byron", lat: 51.540099, long: -0.0345446, type: .Green),
-        Business(name: "Zara", lat: 51.550099, long: -0.0555446, type: .Green),
-        Business(name: "Topshop", lat: 51.513099, long: -0.0235446, type: .Green),
-        Business(name: "Tesco", lat: 51.5320099, long: -0.0345446, type: .Green),
-        Business(name: "Waitrose", lat: 51.550099, long: -0.0315446, type: .Green),
-        Business(name: "Sainsburys", lat: 51.550099, long: -0.0315446, type: .Green),
+        Business(name: "Honest Burgers", lat: 51.530099, long: -0.0915446, type: .Red),
+        Business(name: "Byron", lat: 51.540099, long: -0.0345446, type: .Red),
+        Business(name: "Zara", lat: 51.550099, long: -0.0555446, type: .Red),
+        Business(name: "Topshop", lat: 51.513099, long: -0.0235446, type: .Red),
+        Business(name: "Tesco", lat: 51.5320099, long: -0.0345446, type: .Red),
+        Business(name: "Waitrose", lat: 51.550099, long: -0.0315446, type: .Red),
+        Business(name: "Sainsburys", lat: 51.550099, long: -0.0315446, type: .Red),
         Business(name: "Waterstones", lat: 51.5200099, long: -0.1205446, type: .Green),
         Business(name: "Debenhams", lat: 51.5340099, long: -0.11505446, type: .Green),
-        Business(name: "Marks & Spencer", lat: 52.5340099, long: -0.1255446, type: .Green),
+        Business(name: "Marks & Spencer", lat: 52.5340099, long: -0.1255446, type: .Red),
         Business(name: "Argos", lat: 51.5340099, long: -0.1305446, type: .Green),
         Business(name: "HSBC", lat: 51.5040099, long: -0.1315446, type: .Green),
-        Business(name: "Barclays", lat: 51.5240099, long: -0.1115446, type: .Green),
-        Business(name: "Boots", lat: 51.5240099, long: -0.1165446, type: .Green),
+        Business(name: "Barclays", lat: 51.5240099, long: -0.1115446, type: .Red),
+        Business(name: "Boots", lat: 51.5240099, long: -0.1165446, type: .Red),
 
     ]
     
@@ -65,9 +65,7 @@ class MapViewController: UIViewController {
             marker.position = CLLocationCoordinate2D(latitude: business.lat, longitude: business.long)
             marker.title = business.name
             marker.snippet = "Details"
-            
-            
-            marker.icon = UIImage(named: "logo2")
+            marker.icon = (business.type == .Green) ? UIImage(named: "pin-green") : UIImage(named: "pin-red")
             marker.map = mapView
         }
     }
