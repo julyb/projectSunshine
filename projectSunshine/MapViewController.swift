@@ -11,6 +11,9 @@ import GoogleMaps
 
 class MapViewController: UIViewController {
 
+    
+    let locationManager = CLLocationManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,7 +24,9 @@ class MapViewController: UIViewController {
         let camera = GMSCameraPosition.camera(withLatitude: 51.525566, longitude: -0.086766, zoom: 10.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         
-        do {
+        
+        //Styling the map
+        /*do {
             // Set the map style by passing the URL of the local file.
             if let styleURL = Bundle.main.url(forResource: "style", withExtension: "json") {
                 mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
@@ -30,7 +35,7 @@ class MapViewController: UIViewController {
             }
         } catch {
             NSLog("One or more of the map styles failed to load. \(error)")
-        }
+        }*/
 
         view = mapView
         
@@ -42,7 +47,17 @@ class MapViewController: UIViewController {
         marker.map = mapView
         
         
-       
+        let marker2 = GMSMarker()
+        marker2.position = CLLocationCoordinate2D(latitude: 51.520099, longitude: -0.0705446)
+        marker2.title = "Starbucks"
+        marker2.snippet = "Check in"
+        marker2.icon = GMSMarker.markerImage(with: UIColor.green)
+        marker2.map = mapView
+    }
+    
+    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
+        
+        return true
     }
 }
 
