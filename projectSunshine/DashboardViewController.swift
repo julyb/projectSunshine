@@ -9,7 +9,24 @@
 import UIKit
 
 final class DashboardViewController: UIViewController {
+    @IBOutlet weak var batteryImageView: UIImageView!
   @IBOutlet weak var containerView: UIView!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.changeBattery(_:)), name: NSNotification.Name(rawValue: "level"), object: nil)
+
+    }
+    
+    func changeBattery(_ notification: NSNotification) {
+        
+        if let type = notification.userInfo?["type"] as? Type {
+            batteryImageView.image = (type == .Green) ? UIImage(named: "battery-high") : UIImage(named: "battery-low")
+        }
+    }
+
 }
 
 class ManagePageViewController: UIPageViewController {
@@ -19,6 +36,7 @@ class ManagePageViewController: UIPageViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+
     dataSource = self
     
     // 1
@@ -45,6 +63,8 @@ class ManagePageViewController: UIPageViewController {
     return nil
   }
 }
+
+
 
 //MARK: implementation of UIPageViewControllerDataSource
 extension ManagePageViewController: UIPageViewControllerDataSource {

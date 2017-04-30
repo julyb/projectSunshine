@@ -126,6 +126,13 @@ class MapViewController: UIViewController, GMSMapViewDelegate, SummaryViewProtoc
         if tapped {
             
             summaryView.configureForType(type: (marker.userData as? Type)!)
+            if let type = marker.userData as? Type {
+                
+                let typeDict:[String: Type] = ["type": type]
+
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "level"), object: nil, userInfo: typeDict)
+
+            }
             self.view.addSubview(summaryView)
         } else {
             summaryView.removeFromSuperview()
