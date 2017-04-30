@@ -24,8 +24,8 @@ struct Business {
 class MapViewController: UIViewController, GMSMapViewDelegate, SummaryViewProtocol {
 
     var mapView: GMSMapView?
-    var summaryView = SummaryView(frame: CGRect(x:10, y:580, width:390, height:90))
-    var markerView = MarkerView(frame: CGRect(x:10, y:600, width:200, height:123))
+    var summaryView = SummaryView(frame: CGRect(x:7, y:520, width:360, height:90))
+    var markerView = MarkerView(frame: CGRect(x:10, y:550, width:200, height:123))
 
     var tapped = false
     
@@ -78,8 +78,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate, SummaryViewProtoc
         marker.snippet = "United Kingdom"
         marker.map = mapView
         
-        let button:UIButton = UIButton(frame: CGRect(x: 355 , y: 20, width: 50, height: 50))
-        button.backgroundColor = .green
+        let button:UIButton = UIButton(frame: CGRect(x: 300 , y: 20, width: 50, height: 50))
+        button.setImage(UIImage(named: "energy-icon"), for: .normal)
         button.setTitle("", for: .normal)
         button.addTarget(self, action:#selector(self.changeMap(_:)), for: .touchUpInside)
         self.view.addSubview(button)

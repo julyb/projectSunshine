@@ -13,6 +13,7 @@
 		0A3920CE1EB55F6F0096EF48 /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3920CD1EB55F6F0096EF48 /* MarkerView.xib */; };
 		0A3920D01EB55F8B0096EF48 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3920CF1EB55F8B0096EF48 /* MarkerView.swift */; };
 		0A3920DE1EB578480096EF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3920DD1EB578480096EF48 /* Assets.xcassets */; };
+		0AC9F1E51EB581BD00BFAF00 /* eco.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC9F1E41EB581BD00BFAF00 /* eco.png */; };
 		0AF7C9951EB4F186001ED186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9941EB4F186001ED186 /* AppDelegate.swift */; };
 		0AF7C9971EB4F186001ED186 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9961EB4F186001ED186 /* MapViewController.swift */; };
 		0AF7C99A1EB4F186001ED186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7C9981EB4F186001ED186 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		0A3920CD1EB55F6F0096EF48 /* MarkerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
 		0A3920CF1EB55F8B0096EF48 /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
 		0A3920DD1EB578480096EF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AC9F1E41EB581BD00BFAF00 /* eco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eco.png; sourceTree = "<group>"; };
 		0AF7C9911EB4F186001ED186 /* projectSunshine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectSunshine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF7C9941EB4F186001ED186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF7C9961EB4F186001ED186 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				0A3920DD1EB578480096EF48 /* Assets.xcassets */,
+				0AC9F1E41EB581BD00BFAF00 /* eco.png */,
 				0AF7C9C81EB52424001ED186 /* Assets */,
 				0AF7C9941EB4F186001ED186 /* AppDelegate.swift */,
 				0AF7C9961EB4F186001ED186 /* MapViewController.swift */,
@@ -297,6 +300,7 @@
 				0AF7C99A1EB4F186001ED186 /* Main.storyboard in Resources */,
 				0A3920DE1EB578480096EF48 /* Assets.xcassets in Resources */,
 				0AF7C9C71EB519FE001ED186 /* style.json in Resources */,
+				0AC9F1E51EB581BD00BFAF00 /* eco.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
