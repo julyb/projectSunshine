@@ -19,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="200" height="123"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speech" translatesAutoresizingMaskIntoConstraints="NO" id="5fQ-eq-cbs">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="5fQ-eq-cbs">
                     <rect key="frame" x="0.0" y="0.0" width="200" height="123"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
@@ -31,7 +31,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpd-Ag-bbc">
-                    <rect key="frame" x="70" y="40" width="60" height="30"/>
+                    <rect key="frame" x="70" y="47" width="60" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="Check In"/>
@@ -54,6 +54,6 @@
         </view>
     </objects>
     <resources>
-        <image name="speech" width="958" height="958"/>
+        <image name="bubbles" width="192" height="76"/>
     </resources>
 </document>
