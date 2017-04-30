@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AXR-cu-Jx8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AXR-cu-Jx8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -212,7 +212,7 @@
         <!--Dashboard-->
         <scene sceneID="xCV-BX-A21">
             <objects>
-                <viewController id="063-iV-YvZ" sceneMemberID="viewController">
+                <viewController id="063-iV-YvZ" customClass="DashboardViewController" customModule="projectSunshine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DRh-4I-rfV"/>
                         <viewControllerLayoutGuide type="bottom" id="avN-Vh-GDC"/>
@@ -243,6 +243,7 @@
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHW-3d-fGm">
                                 <rect key="frame" x="0.0" y="438" width="375" height="180"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="q7U-8O-YSG"/>
                                 </constraints>
@@ -266,6 +267,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard" id="T3d-EK-7fa"/>
+                    <connections>
+                        <outlet property="containerView" destination="lHW-3d-fGm" id="rce-Zk-0jD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5a-Cn-ozw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -290,10 +294,10 @@
             </objects>
             <point key="canvasLocation" x="-396" y="-812"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Manage Page View Controller-->
         <scene sceneID="mWC-Sf-VKl">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="b11-cp-Qjw" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="b11-cp-Qjw" customClass="ManagePageViewController" customModule="projectSunshine" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="cgQ-0E-Rah" kind="show" id="5gO-M7-CdS"/>
                     </connections>
@@ -305,7 +309,7 @@
         <!--View Controller-->
         <scene sceneID="DST-iL-NqB">
             <objects>
-                <viewController id="cgQ-0E-Rah" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="POIViewController" id="cgQ-0E-Rah" customClass="POIViewController" customModule="projectSunshine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J4E-No-KdT"/>
                         <viewControllerLayoutGuide type="bottom" id="aoe-EO-yP1"/>
@@ -326,6 +330,9 @@
                             <constraint firstItem="vzJ-5W-XWv" firstAttribute="top" secondItem="J4E-No-KdT" secondAttribute="bottom" constant="30" id="oj2-mj-lPW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="poiImageView" destination="vzJ-5W-XWv" id="6Xq-YK-us3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcn-ee-DVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
