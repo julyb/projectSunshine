@@ -40,7 +40,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate, SummaryViewProtoc
         Business(name: "Pret a manger", lat: 51.540099, long: -0.0905446, type: .Green),
         Business(name: "Costa", lat: 51.5140099, long: -0.1005446, type: .Red),
         Business(name: "Eat", lat: 51.510099, long: -0.0455446, type: .Green),
-        Business(name: "Pizza Hut", lat: 51.500099, long: -0.0655446, type: .Green),
+        Business(name: "Starbucks", lat: 51.500099, long: -0.0655446, type: .Green),
         Business(name: "Wahaca", lat: 51.520099, long: -0.0715446, type: .Green),
         Business(name: "Honest Burgers", lat: 51.530099, long: -0.0915446, type: .Red),
         Business(name: "Byron", lat: 51.540099, long: -0.0345446, type: .Red),

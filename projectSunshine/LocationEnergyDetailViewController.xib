@@ -22,6 +22,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHg-T7-NAU">
+                    <rect key="frame" x="30" y="404" width="315" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="solar-panel-8" translatesAutoresizingMaskIntoConstraints="NO" id="b84-1X-gAg">
                     <rect key="frame" x="36" y="154" width="303" height="250"/>
                     <constraints>
@@ -29,12 +35,6 @@
                         <constraint firstAttribute="width" constant="303" id="Ar3-7L-fAw"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHg-T7-NAU">
-                    <rect key="frame" x="30" y="416" width="315" height="16"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starbucks-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Y-3J-GAx">
                     <rect key="frame" x="36" y="74" width="60" height="60"/>
                     <constraints>
@@ -59,12 +59,19 @@
                         <action selector="closeTapped:" destination="-1" eventType="touchUpInside" id="tD0-b6-t8s"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12% green energy impact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xC-8M-0Le">
+                    <rect key="frame" x="110" y="94" width="152.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Z8Y-3J-GAx" firstAttribute="leading" secondItem="b84-1X-gAg" secondAttribute="leading" id="1jr-k5-I8j"/>
+                <constraint firstItem="4xC-8M-0Le" firstAttribute="leading" secondItem="Bu3-ho-vbU" secondAttribute="leading" id="7sZ-w0-d3p"/>
                 <constraint firstAttribute="trailing" secondItem="b84-1X-gAg" secondAttribute="trailing" constant="36" id="C2L-Ct-Lu1"/>
-                <constraint firstItem="kHg-T7-NAU" firstAttribute="top" secondItem="b84-1X-gAg" secondAttribute="bottom" constant="12" id="Cgi-Ym-jpA"/>
+                <constraint firstItem="kHg-T7-NAU" firstAttribute="top" secondItem="b84-1X-gAg" secondAttribute="bottom" id="Cgi-Ym-jpA"/>
                 <constraint firstItem="kHg-T7-NAU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="I6a-yB-lOS"/>
                 <constraint firstItem="b84-1X-gAg" firstAttribute="top" secondItem="Z8Y-3J-GAx" secondAttribute="bottom" constant="20" id="aua-e8-Xy1"/>
                 <constraint firstAttribute="trailing" secondItem="kHg-T7-NAU" secondAttribute="trailing" constant="30" id="bxc-2j-Ilt"/>
@@ -74,6 +81,7 @@
                 <constraint firstItem="Bu3-ho-vbU" firstAttribute="top" secondItem="Z8Y-3J-GAx" secondAttribute="top" id="oI2-Qh-jwK"/>
                 <constraint firstAttribute="trailing" secondItem="uRb-M0-L7p" secondAttribute="trailing" constant="20" id="qXC-ON-aju"/>
                 <constraint firstItem="uRb-M0-L7p" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="34" id="udc-zy-Gov"/>
+                <constraint firstItem="4xC-8M-0Le" firstAttribute="top" secondItem="Bu3-ho-vbU" secondAttribute="bottom" constant="-1" id="uty-CM-e6n"/>
                 <constraint firstItem="Bu3-ho-vbU" firstAttribute="leading" secondItem="Z8Y-3J-GAx" secondAttribute="trailing" constant="14" id="xqa-WJ-ePc"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kHg-T7-NAU" secondAttribute="bottom" constant="10" id="zT9-S8-LF1"/>
             </constraints>
