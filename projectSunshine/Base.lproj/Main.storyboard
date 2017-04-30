@@ -224,7 +224,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battery-low" translatesAutoresizingMaskIntoConstraints="NO" id="gzv-fn-rfD">
                                 <rect key="frame" x="92.5" y="328" width="190" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="kNJ-ni-pQO"/>
+                                    <constraint firstAttribute="height" constant="92" id="kNJ-ni-pQO"/>
                                     <constraint firstAttribute="width" constant="190" id="wSl-jO-Ba1"/>
                                 </constraints>
                             </imageView>
@@ -341,6 +341,7 @@
     </scenes>
     <resources>
         <image name="battery-low" width="275" height="176"/>
+        <image name="battery" width="273" height="174"/>
         <image name="chart" width="25" height="25"/>
         <image name="dashboard" width="25" height="25"/>
         <image name="eco2" width="414" height="360"/>
@@ -348,5 +349,6 @@
         <image name="pin-green" width="32" height="32"/>
         <image name="pin-red" width="32" height="32"/>
         <image name="pizza-hut" width="2812" height="1046"/>
+        <image name="renew-logo" width="148" height="148"/>
     </resources>
 </document>
