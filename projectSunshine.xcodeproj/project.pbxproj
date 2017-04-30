@@ -12,11 +12,10 @@
 		0A3920CC1EB556720096EF48 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3920CB1EB556720096EF48 /* NibLoadingView.swift */; };
 		0A3920CE1EB55F6F0096EF48 /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3920CD1EB55F6F0096EF48 /* MarkerView.xib */; };
 		0A3920D01EB55F8B0096EF48 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3920CF1EB55F8B0096EF48 /* MarkerView.swift */; };
-		0A3920D61EB573130096EF48 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3920D51EB573130096EF48 /* logo-icon.png */; };
+		0A3920DE1EB578480096EF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3920DD1EB578480096EF48 /* Assets.xcassets */; };
 		0AF7C9951EB4F186001ED186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9941EB4F186001ED186 /* AppDelegate.swift */; };
 		0AF7C9971EB4F186001ED186 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9961EB4F186001ED186 /* MapViewController.swift */; };
 		0AF7C99A1EB4F186001ED186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7C9981EB4F186001ED186 /* Main.storyboard */; };
-		0AF7C99C1EB4F186001ED186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7C99B1EB4F186001ED186 /* Assets.xcassets */; };
 		0AF7C99F1EB4F186001ED186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7C99D1EB4F186001ED186 /* LaunchScreen.storyboard */; };
 		0AF7C9AA1EB4F186001ED186 /* projectSunshineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9A91EB4F186001ED186 /* projectSunshineTests.swift */; };
 		0AF7C9B51EB4F186001ED186 /* projectSunshineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9B41EB4F186001ED186 /* projectSunshineUITests.swift */; };
@@ -47,12 +46,11 @@
 		0A3920CB1EB556720096EF48 /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
 		0A3920CD1EB55F6F0096EF48 /* MarkerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
 		0A3920CF1EB55F8B0096EF48 /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
-		0A3920D51EB573130096EF48 /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-icon.png"; path = "Assets.xcassets/logo-icon.imageset/logo-icon.png"; sourceTree = "<group>"; };
+		0A3920DD1EB578480096EF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF7C9911EB4F186001ED186 /* projectSunshine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectSunshine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF7C9941EB4F186001ED186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF7C9961EB4F186001ED186 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0AF7C9991EB4F186001ED186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0AF7C99B1EB4F186001ED186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF7C99E1EB4F186001ED186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AF7C9A01EB4F186001ED186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF7C9A51EB4F186001ED186 /* projectSunshineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectSunshineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,12 +116,11 @@
 		0AF7C9931EB4F186001ED186 /* projectSunshine */ = {
 			isa = PBXGroup;
 			children = (
+				0A3920DD1EB578480096EF48 /* Assets.xcassets */,
 				0AF7C9C81EB52424001ED186 /* Assets */,
 				0AF7C9941EB4F186001ED186 /* AppDelegate.swift */,
 				0AF7C9961EB4F186001ED186 /* MapViewController.swift */,
 				0AF7C9981EB4F186001ED186 /* Main.storyboard */,
-				0A3920D51EB573130096EF48 /* logo-icon.png */,
-				0AF7C99B1EB4F186001ED186 /* Assets.xcassets */,
 				0AF7C99D1EB4F186001ED186 /* LaunchScreen.storyboard */,
 				0AF7C9A01EB4F186001ED186 /* Info.plist */,
 				0AF7C9C61EB519FE001ED186 /* style.json */,
@@ -289,11 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3920CE1EB55F6F0096EF48 /* MarkerView.xib in Resources */,
-				0A3920D61EB573130096EF48 /* logo-icon.png in Resources */,
 				0A3920C81EB555010096EF48 /* SummaryView.xib in Resources */,
 				0AF7C99F1EB4F186001ED186 /* LaunchScreen.storyboard in Resources */,
-				0AF7C99C1EB4F186001ED186 /* Assets.xcassets in Resources */,
 				0AF7C99A1EB4F186001ED186 /* Main.storyboard in Resources */,
+				0A3920DE1EB578480096EF48 /* Assets.xcassets in Resources */,
 				0AF7C9C71EB519FE001ED186 /* style.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

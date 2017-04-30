@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "pin-red.png",
+      "filename" : "pizza-hut.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "pin-red@2x.png",
       "scale" : "2x"
     },
     {
