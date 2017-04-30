@@ -264,6 +264,7 @@
 				TargetAttributes = {
 					0AF7C9901EB4F186001ED186 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4QH4G6597M;
 						ProvisioningStyle = Automatic;
 					};
 					0AF7C9A41EB4F186001ED186 = {
@@ -546,7 +547,7 @@
 			baseConfigurationReference = D34F49BA85EF06AD0CF12260 /* Pods-projectSunshine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4QH4G6597M;
 				INFOPLIST_FILE = projectSunshine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -562,7 +563,7 @@
 			baseConfigurationReference = 61CCBB9677C1834958FD23C9 /* Pods-projectSunshine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4QH4G6597M;
 				INFOPLIST_FILE = projectSunshine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
