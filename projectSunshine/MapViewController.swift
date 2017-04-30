@@ -16,14 +16,18 @@ enum Type {
 
 struct Business {
     let name: String
-    let lat: CLLocationDegrees
+    var lat: CLLocationDegrees
     let long: CLLocationDegrees
     let type: Type
 }
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, GMSMapViewDelegate, SummaryViewProtocol {
 
     var mapView: GMSMapView?
+    var summaryView = SummaryView(frame: CGRect(x:10, y:580, width:390, height:90))
+    var markerView = MarkerView(frame: CGRect(x:10, y:600, width:200, height:123))
+
+    var tapped = false
     
     @IBOutlet weak var mapButton: UIButton!
     
@@ -55,25 +59,14 @@ class MapViewController: UIViewController {
 
     ]
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for business in businesses {
-            let marker = GMSMarker()
-            marker.position = CLLocationCoordinate2D(latitude: business.lat, longitude: business.long)
-            marker.title = business.name
-            marker.snippet = "Details"
-            marker.icon = (business.type == .Green) ? UIImage(named: "pin-green") : UIImage(named: "pin-red")
-            marker.map = mapView
-        }
-    }
-    
-    override func loadView() {
-
-        let camera = GMSCameraPosition.camera(withLatitude: 51.525566, longitude: -0.086766, zoom: 12.0)
+        summaryView.delegate = self
+        
+        let camera = GMSCameraPosition.camera(withLatitude: 51.525566, longitude: -0.086766, zoom: 5.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView?.delegate = self
 
         view = mapView
         
@@ -84,23 +77,62 @@ class MapViewController: UIViewController {
         marker.snippet = "United Kingdom"
         marker.map = mapView
         
-        
-        let button:UIButton = UIButton(frame: CGRect(x: 355 , y: 630, width: 50, height: 50))
+        let button:UIButton = UIButton(frame: CGRect(x: 355 , y: 20, width: 50, height: 50))
         button.backgroundColor = .green
         button.setTitle("", for: .normal)
         button.addTarget(self, action:#selector(self.changeMap(_:)), for: .touchUpInside)
         self.view.addSubview(button)
+        
+        for business in businesses {
+            let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2D(latitude: business.lat, longitude: business.long)
+            marker.title = business.name
+            marker.snippet = "Check in"
+            marker.icon = (business.type == .Green) ? UIImage(named: "pin-green") : UIImage(named: "pin-red")
+            marker.map = mapView
+            marker.tracksInfoWindowChanges = true
+            marker.userData = business.type
+        }
+        
+        
+        self.delay(seconds: 0.5) {
+            self.mapView?.animate(toZoom: 12.0)
+        }
     }
     
-    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
+    func delay(seconds: Double, completion:@escaping ()->()) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + seconds) {
+            completion()
+        }
+    }
+    
+    func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+        self.markerView.name.text = marker.title
+        return self.markerView
+    }
+ 
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         
-        //show banner 
+        self.summaryView .removeFromSuperview()
         
-        return true
+        return false
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+
+        tapped = true
+        
+        if tapped {
+            
+            summaryView.configureForType(type: (marker.userData as? Type)!)
+            self.view.addSubview(summaryView)
+        } else {
+            summaryView.removeFromSuperview()
+        }
     }
     
     @IBAction func changeMap(_ sender: UIButton) {
-
+       
         sender.isSelected = !sender.isSelected
         
         if sender.isSelected {
@@ -117,6 +149,14 @@ class MapViewController: UIViewController {
         } else {
             mapView?.mapStyle = nil
         }
+    }
+    
+    func didTapCloseButton() {
+        self.summaryView.removeFromSuperview()
+    }
+    
+    func didTapDetails() {
+        
     }
 }
 

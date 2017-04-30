@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarkerView" customModule="projectSunshine" customModuleProvider="target">
+            <connections>
+                <outlet property="name" destination="Q84-eE-m2i" id="dPV-WH-Z74"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0aU-SQ-8w9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speech" translatesAutoresizingMaskIntoConstraints="NO" id="5fQ-eq-cbs">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="123"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q84-eE-m2i">
+                    <rect key="frame" x="16" y="18" width="168" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpd-Ag-bbc">
+                    <rect key="frame" x="70" y="40" width="60" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Check In"/>
+                    <connections>
+                        <action selector="didTapCheckin:" destination="-1" eventType="touchUpInside" id="VAm-hp-FZ7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5fQ-eq-cbs" secondAttribute="bottom" id="0EB-I5-V9l"/>
+                <constraint firstItem="5fQ-eq-cbs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GKQ-nX-QSj"/>
+                <constraint firstAttribute="trailing" secondItem="5fQ-eq-cbs" secondAttribute="trailing" id="MbT-9G-x3b"/>
+                <constraint firstItem="5fQ-eq-cbs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W1M-Qd-0VK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-92" y="-233.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="speech" width="958" height="958"/>
+    </resources>
+</document>

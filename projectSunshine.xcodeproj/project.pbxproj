@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3920C81EB555010096EF48 /* SummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3920C71EB555010096EF48 /* SummaryView.xib */; };
+		0A3920CA1EB555E30096EF48 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3920C91EB555E30096EF48 /* SummaryView.swift */; };
+		0A3920CC1EB556720096EF48 /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3920CB1EB556720096EF48 /* NibLoadingView.swift */; };
+		0A3920CE1EB55F6F0096EF48 /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3920CD1EB55F6F0096EF48 /* MarkerView.xib */; };
+		0A3920D01EB55F8B0096EF48 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3920CF1EB55F8B0096EF48 /* MarkerView.swift */; };
+		0A3920D61EB573130096EF48 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3920D51EB573130096EF48 /* logo-icon.png */; };
 		0AF7C9951EB4F186001ED186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9941EB4F186001ED186 /* AppDelegate.swift */; };
 		0AF7C9971EB4F186001ED186 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7C9961EB4F186001ED186 /* MapViewController.swift */; };
 		0AF7C99A1EB4F186001ED186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7C9981EB4F186001ED186 /* Main.storyboard */; };
@@ -36,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3920C71EB555010096EF48 /* SummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryView.xib; sourceTree = "<group>"; };
+		0A3920C91EB555E30096EF48 /* SummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		0A3920CB1EB556720096EF48 /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
+		0A3920CD1EB55F6F0096EF48 /* MarkerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
+		0A3920CF1EB55F8B0096EF48 /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		0A3920D51EB573130096EF48 /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-icon.png"; path = "Assets.xcassets/logo-icon.imageset/logo-icon.png"; sourceTree = "<group>"; };
 		0AF7C9911EB4F186001ED186 /* projectSunshine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectSunshine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF7C9941EB4F186001ED186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF7C9961EB4F186001ED186 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -110,10 +122,16 @@
 				0AF7C9941EB4F186001ED186 /* AppDelegate.swift */,
 				0AF7C9961EB4F186001ED186 /* MapViewController.swift */,
 				0AF7C9981EB4F186001ED186 /* Main.storyboard */,
+				0A3920D51EB573130096EF48 /* logo-icon.png */,
 				0AF7C99B1EB4F186001ED186 /* Assets.xcassets */,
 				0AF7C99D1EB4F186001ED186 /* LaunchScreen.storyboard */,
 				0AF7C9A01EB4F186001ED186 /* Info.plist */,
 				0AF7C9C61EB519FE001ED186 /* style.json */,
+				0A3920C71EB555010096EF48 /* SummaryView.xib */,
+				0A3920C91EB555E30096EF48 /* SummaryView.swift */,
+				0A3920CB1EB556720096EF48 /* NibLoadingView.swift */,
+				0A3920CD1EB55F6F0096EF48 /* MarkerView.xib */,
+				0A3920CF1EB55F8B0096EF48 /* MarkerView.swift */,
 			);
 			path = projectSunshine;
 			sourceTree = "<group>";
@@ -270,6 +288,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3920CE1EB55F6F0096EF48 /* MarkerView.xib in Resources */,
+				0A3920D61EB573130096EF48 /* logo-icon.png in Resources */,
+				0A3920C81EB555010096EF48 /* SummaryView.xib in Resources */,
 				0AF7C99F1EB4F186001ED186 /* LaunchScreen.storyboard in Resources */,
 				0AF7C99C1EB4F186001ED186 /* Assets.xcassets in Resources */,
 				0AF7C99A1EB4F186001ED186 /* Main.storyboard in Resources */,
@@ -346,8 +367,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3920CC1EB556720096EF48 /* NibLoadingView.swift in Sources */,
 				0AF7C9971EB4F186001ED186 /* MapViewController.swift in Sources */,
 				0AF7C9951EB4F186001ED186 /* AppDelegate.swift in Sources */,
+				0A3920D01EB55F8B0096EF48 /* MarkerView.swift in Sources */,
+				0A3920CA1EB555E30096EF48 /* SummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
