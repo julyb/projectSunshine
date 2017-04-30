@@ -8,49 +8,74 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationEnergyDetailViewController" customModule="projectSunshine" customModuleProvider="target">
+            <connections>
+                <outlet property="brandLogoImageView" destination="Z8Y-3J-GAx" id="4cG-2g-OM9"/>
+                <outlet property="brandNameLabel" destination="Bu3-ho-vbU" id="8In-Ps-aSk"/>
+                <outlet property="solarPanelDetailsLabel" destination="kHg-T7-NAU" id="TDy-mZ-s3F"/>
+                <outlet property="solarPanelImageView" destination="b84-1X-gAg" id="HQH-FW-j8E"/>
+                <outlet property="view" destination="iN0-l3-epB" id="tBx-dp-NFS"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LocationEnergyDetailViewController">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="solar-panel-8" translatesAutoresizingMaskIntoConstraints="NO" id="b84-1X-gAg">
-                    <rect key="frame" x="36" y="40" width="303" height="329"/>
+                    <rect key="frame" x="36" y="154" width="303" height="250"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="329" id="9wg-2R-pFe"/>
+                        <constraint firstAttribute="height" constant="250" id="9wg-2R-pFe"/>
                         <constraint firstAttribute="width" constant="303" id="Ar3-7L-fAw"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHg-T7-NAU">
+                    <rect key="frame" x="30" y="416" width="315" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starbucks-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Y-3J-GAx">
-                    <rect key="frame" x="36" y="431" width="60" height="60"/>
+                    <rect key="frame" x="36" y="74" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="ZJB-Y5-lZ9"/>
                         <constraint firstAttribute="height" constant="60" id="tDw-5P-gEf"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHg-T7-NAU">
-                    <rect key="frame" x="166" y="399" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starbucks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bu3-ho-vbU">
+                    <rect key="frame" x="110" y="74" width="78" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starbucks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bu3-ho-vbU">
-                    <rect key="frame" x="110" y="431" width="78" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRb-M0-L7p">
+                    <rect key="frame" x="330" y="34" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="No8-k9-47L"/>
+                        <constraint firstAttribute="height" constant="25" id="PoY-5B-iwn"/>
+                    </constraints>
+                    <state key="normal" image="x-mark"/>
+                    <connections>
+                        <action selector="closeTapped:" destination="-1" eventType="touchUpInside" id="tD0-b6-t8s"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Z8Y-3J-GAx" firstAttribute="leading" secondItem="b84-1X-gAg" secondAttribute="leading" id="1jr-k5-I8j"/>
-                <constraint firstItem="b84-1X-gAg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="AkW-tK-W9l"/>
                 <constraint firstAttribute="trailing" secondItem="b84-1X-gAg" secondAttribute="trailing" constant="36" id="C2L-Ct-Lu1"/>
-                <constraint firstItem="kHg-T7-NAU" firstAttribute="top" secondItem="b84-1X-gAg" secondAttribute="bottom" constant="30" id="Cgi-Ym-jpA"/>
+                <constraint firstItem="kHg-T7-NAU" firstAttribute="top" secondItem="b84-1X-gAg" secondAttribute="bottom" constant="12" id="Cgi-Ym-jpA"/>
                 <constraint firstItem="kHg-T7-NAU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="I6a-yB-lOS"/>
+                <constraint firstItem="b84-1X-gAg" firstAttribute="top" secondItem="Z8Y-3J-GAx" secondAttribute="bottom" constant="20" id="aua-e8-Xy1"/>
+                <constraint firstAttribute="trailing" secondItem="kHg-T7-NAU" secondAttribute="trailing" constant="30" id="bxc-2j-Ilt"/>
+                <constraint firstItem="Z8Y-3J-GAx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="74" id="iwU-9E-Pjw"/>
                 <constraint firstItem="b84-1X-gAg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="kFv-s3-g1T"/>
-                <constraint firstItem="Z8Y-3J-GAx" firstAttribute="top" secondItem="kHg-T7-NAU" secondAttribute="bottom" constant="11" id="xsQ-WY-7sd"/>
+                <constraint firstItem="kHg-T7-NAU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="mYL-A9-nwa"/>
+                <constraint firstItem="Bu3-ho-vbU" firstAttribute="top" secondItem="Z8Y-3J-GAx" secondAttribute="top" id="oI2-Qh-jwK"/>
+                <constraint firstAttribute="trailing" secondItem="uRb-M0-L7p" secondAttribute="trailing" constant="20" id="qXC-ON-aju"/>
+                <constraint firstItem="uRb-M0-L7p" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="34" id="udc-zy-Gov"/>
+                <constraint firstItem="Bu3-ho-vbU" firstAttribute="leading" secondItem="Z8Y-3J-GAx" secondAttribute="trailing" constant="14" id="xqa-WJ-ePc"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kHg-T7-NAU" secondAttribute="bottom" constant="10" id="zT9-S8-LF1"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>
@@ -58,5 +83,6 @@
     <resources>
         <image name="solar-panel-8" width="500" height="500"/>
         <image name="starbucks-logo" width="1024" height="1024"/>
+        <image name="x-mark" width="512" height="512"/>
     </resources>
 </document>

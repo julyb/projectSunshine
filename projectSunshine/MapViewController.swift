@@ -164,7 +164,9 @@ class MapViewController: UIViewController, GMSMapViewDelegate, SummaryViewProtoc
     }
     
     func didTapDetails() {
-        
+        let locationVC = LocationEnergyDetailViewController()
+        present(locationVC, animated: true)
+      
     }
 }
 
