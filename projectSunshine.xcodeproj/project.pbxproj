@@ -26,6 +26,7 @@
 		39A4A8561EB57B670045C8DB /* POIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A4A8541EB57B670045C8DB /* POIViewController.swift */; };
 		39D5C9511EB57D2700896C90 /* LocationEnergyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C9501EB57D2700896C90 /* LocationEnergyDetailViewController.swift */; };
 		39D5C9531EB57D3600896C90 /* LocationEnergyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D5C9521EB57D3600896C90 /* LocationEnergyDetailViewController.xib */; };
+		39D5C9551EB5E78700896C90 /* ShowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C9541EB5E78700896C90 /* ShowTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		39A4A8541EB57B670045C8DB /* POIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POIViewController.swift; sourceTree = "<group>"; };
 		39D5C9501EB57D2700896C90 /* LocationEnergyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEnergyDetailViewController.swift; sourceTree = "<group>"; };
 		39D5C9521EB57D3600896C90 /* LocationEnergyDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationEnergyDetailViewController.xib; sourceTree = "<group>"; };
+		39D5C9541EB5E78700896C90 /* ShowTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTime.swift; sourceTree = "<group>"; };
 		61CCBB9677C1834958FD23C9 /* Pods-projectSunshine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectSunshine.release.xcconfig"; path = "Pods/Target Support Files/Pods-projectSunshine/Pods-projectSunshine.release.xcconfig"; sourceTree = "<group>"; };
 		65EEF04F7863942401C67696 /* libPods-projectSunshine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-projectSunshine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34F49BA85EF06AD0CF12260 /* Pods-projectSunshine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectSunshine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projectSunshine/Pods-projectSunshine.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				0A3920CF1EB55F8B0096EF48 /* MarkerView.swift */,
 				39D5C9521EB57D3600896C90 /* LocationEnergyDetailViewController.xib */,
 				39D5C9501EB57D2700896C90 /* LocationEnergyDetailViewController.swift */,
+				39D5C9541EB5E78700896C90 /* ShowTime.swift */,
 			);
 			path = projectSunshine;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D5C9551EB5E78700896C90 /* ShowTime.swift in Sources */,
 				39D5C9511EB57D2700896C90 /* LocationEnergyDetailViewController.swift in Sources */,
 				0A3920CC1EB556720096EF48 /* NibLoadingView.swift in Sources */,
 				39A4A8551EB57B670045C8DB /* DashboardViewController.swift in Sources */,
