@@ -72,16 +72,16 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your impact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwh-UT-Nab">
-                                <rect key="frame" x="119.5" y="282" width="136.5" height="36"/>
+                                <rect key="frame" x="119" y="250" width="137" height="68"/>
                                 <fontDescription key="fontDescription" name="Siemreap" family="Siemreap" pointSize="26"/>
                                 <color key="textColor" red="0.043137254899999998" green="0.40175538969115643" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="bUy-3M-Fb2">
-                                <rect key="frame" x="73" y="100" width="230" height="113"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="renew-logo" translatesAutoresizingMaskIntoConstraints="NO" id="bUy-3M-Fb2">
+                                <rect key="frame" x="73" y="30" width="230" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="hlV-OL-KM5"/>
-                                    <constraint firstAttribute="height" constant="113" id="w4w-NJ-ZCs"/>
+                                    <constraint firstAttribute="height" constant="200" id="w4w-NJ-ZCs"/>
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHW-3d-fGm">
@@ -96,9 +96,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.91050170068027214" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="bwh-UT-Nab" firstAttribute="top" secondItem="bUy-3M-Fb2" secondAttribute="bottom" constant="69" id="21O-aB-Hxf"/>
+                            <constraint firstItem="bwh-UT-Nab" firstAttribute="top" secondItem="bUy-3M-Fb2" secondAttribute="bottom" constant="20" id="21O-aB-Hxf"/>
                             <constraint firstAttribute="trailing" secondItem="lHW-3d-fGm" secondAttribute="trailing" id="6If-oT-QSM"/>
-                            <constraint firstItem="bUy-3M-Fb2" firstAttribute="top" secondItem="Sud-b3-2ff" secondAttribute="topMargin" constant="100" id="7Fp-m2-zeW"/>
+                            <constraint firstItem="bUy-3M-Fb2" firstAttribute="top" secondItem="Sud-b3-2ff" secondAttribute="topMargin" constant="30" id="7Fp-m2-zeW"/>
                             <constraint firstItem="bUy-3M-Fb2" firstAttribute="centerX" secondItem="Sud-b3-2ff" secondAttribute="centerX" id="AlK-Jo-oRk"/>
                             <constraint firstItem="gzv-fn-rfD" firstAttribute="centerX" secondItem="Sud-b3-2ff" secondAttribute="centerX" id="B7D-WO-pLZ"/>
                             <constraint firstItem="lHW-3d-fGm" firstAttribute="leading" secondItem="Sud-b3-2ff" secondAttribute="leading" id="alc-4V-nnb"/>
@@ -179,8 +179,8 @@
         <image name="chart" width="25" height="25"/>
         <image name="dashboard" width="25" height="25"/>
         <image name="globe" width="25" height="25"/>
-        <image name="icon" width="450" height="450"/>
         <image name="pizza-hut" width="2812" height="1046"/>
+        <image name="renew-logo" width="450" height="450"/>
         <image name="unnamed" width="300" height="300"/>
     </resources>
 </document>

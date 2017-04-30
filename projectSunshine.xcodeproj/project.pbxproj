@@ -16,6 +16,9 @@
 		0AF7C9C71EB519FE001ED186 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AF7C9C61EB519FE001ED186 /* style.json */; };
 		11EAB55301D50F6D6C76F845 /* libPods-projectSunshine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEF04F7863942401C67696 /* libPods-projectSunshine.a */; };
 		393FE2341EB5555200C99B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393FE2331EB5555200C99B13 /* Assets.xcassets */; };
+		39A4A84C1EB5732E0045C8DB /* renew-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A4A8491EB5732E0045C8DB /* renew-logo.png */; };
+		39A4A84D1EB5732E0045C8DB /* renew-logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A4A84A1EB5732E0045C8DB /* renew-logo@3x.png */; };
+		39A4A84E1EB5732E0045C8DB /* renew-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A4A84B1EB5732E0045C8DB /* renew-logo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		0AF7C9B61EB4F186001ED186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF7C9C61EB519FE001ED186 /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
 		393FE2331EB5555200C99B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39A4A8491EB5732E0045C8DB /* renew-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "renew-logo.png"; path = "../../../Desktop/renew-logo.png"; sourceTree = "<group>"; };
+		39A4A84A1EB5732E0045C8DB /* renew-logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "renew-logo@3x.png"; path = "../../../Desktop/renew-logo@3x.png"; sourceTree = "<group>"; };
+		39A4A84B1EB5732E0045C8DB /* renew-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "renew-logo@2x.png"; path = "../../../Desktop/renew-logo@2x.png"; sourceTree = "<group>"; };
 		61CCBB9677C1834958FD23C9 /* Pods-projectSunshine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectSunshine.release.xcconfig"; path = "Pods/Target Support Files/Pods-projectSunshine/Pods-projectSunshine.release.xcconfig"; sourceTree = "<group>"; };
 		65EEF04F7863942401C67696 /* libPods-projectSunshine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-projectSunshine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34F49BA85EF06AD0CF12260 /* Pods-projectSunshine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectSunshine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projectSunshine/Pods-projectSunshine.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 		0AF7C9C81EB52424001ED186 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				39A4A8491EB5732E0045C8DB /* renew-logo.png */,
+				39A4A84A1EB5732E0045C8DB /* renew-logo@3x.png */,
+				39A4A84B1EB5732E0045C8DB /* renew-logo@2x.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -270,9 +279,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A4A84C1EB5732E0045C8DB /* renew-logo.png in Resources */,
 				0AF7C99F1EB4F186001ED186 /* LaunchScreen.storyboard in Resources */,
+				39A4A84D1EB5732E0045C8DB /* renew-logo@3x.png in Resources */,
 				0AF7C99A1EB4F186001ED186 /* Main.storyboard in Resources */,
 				393FE2341EB5555200C99B13 /* Assets.xcassets in Resources */,
+				39A4A84E1EB5732E0045C8DB /* renew-logo@2x.png in Resources */,
 				0AF7C9C71EB519FE001ED186 /* style.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
