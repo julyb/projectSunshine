@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 
-class MarkerView: NibLoadingView {
-    
+final class MarkerView: NibLoadingView {
+    @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var name: UILabel!
 }

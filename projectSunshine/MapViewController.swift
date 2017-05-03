@@ -32,6 +32,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate, SummaryViewProtoc
     @IBOutlet weak var mapButton: UIButton!
     
     let businesses = [
+        Business(name: "Bon Vieux Temps", lat: 51.521151, long: -0.1103772, type: .Green),
+        Business(name: "Good & Proper", lat: 51.522014, long: -0.110256, type: .Green),
         Business(name: "Starbucks", lat: 50.520099, long: -0.0705446, type: .Green),
         Business(name: "Apple", lat: 51.510099, long: -0.0605446, type: .Green),
         Business(name: "Wallmart", lat: 51.490099, long: -0.0505446, type: .Red),
@@ -109,6 +111,11 @@ class MapViewController: UIViewController, GMSMapViewDelegate, SummaryViewProtoc
     
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
         self.markerView.name.text = marker.title
+        if let title = marker.title {
+          self.markerView.logoImageView.image = UIImage(named: title)
+        } else {
+          self.markerView.logoImageView.image = UIImage(named: "energy-icon")
+        }
         return self.markerView
     }
  

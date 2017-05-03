@@ -12,9 +12,7 @@ final class LocationEnergyDetailViewController: UIViewController {
   
   @IBOutlet weak var brandNameLabel: UILabel!
   @IBOutlet weak var brandLogoImageView: UIImageView!
-  
-  @IBOutlet weak var solarPanelImageView: UIImageView!
-  @IBOutlet weak var solarPanelDetailsLabel: UILabel!
+//  @IBOutlet weak var solarPanelImageView: UIImageView!
   
   @IBAction func closeTapped(_ sender: Any) {
     dismiss(animated: true)
@@ -38,10 +36,10 @@ final class LocationEnergyDetailViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
-    solarPanelInformation.keys.forEach { key in
-      solarPanelImageView.image = UIImage(named: key)
-      solarPanelDetailsLabel.text = solarPanelInformation[key]
-    }
+//    solarPanelInformation.keys.forEach { key in
+//      solarPanelImageView.image = UIImage(named: key)
+//      solarPanelDetailsLabel.text = solarPanelInformation[key]
+//    }
   }
   
 }
